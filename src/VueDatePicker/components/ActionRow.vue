@@ -50,6 +50,18 @@
                         {{ actionRow.cancelBtnLabel }}
                     </button>
                     <button
+                        v-if="actionRow.showClear"
+                        ref="cancelButtonRef"
+                        type="button"
+                        data-dp-action-element="0"
+                        class="dp__action_button dp__action_cancel"
+                        @click="$emit('clear')"
+                        @keydown.enter="$emit('clear')"
+                        @keydown.space="$emit('clear')"
+                    >
+                        {{ clearButtonLabel }}
+                    </button>
+                    <button
                         v-if="actionRow.showNow"
                         type="button"
                         data-dp-action-element="0"
@@ -88,6 +100,7 @@
         'close-picker': [];
         'select-date': [];
         'select-now': [];
+        'clear': [];
     }
 
     interface ActionRowProps {

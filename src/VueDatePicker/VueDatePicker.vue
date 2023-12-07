@@ -44,6 +44,7 @@
                         @auto-apply="autoApplyValue"
                         @time-update="timeUpdate"
                         @menu-blur="rootEmit('blur')"
+                        @clear="clearValue"
                     >
                         <template v-for="(slot, i) in slotList" #[slot]="args" :key="i">
                             <slot :name="slot" v-bind="{ ...args }" />

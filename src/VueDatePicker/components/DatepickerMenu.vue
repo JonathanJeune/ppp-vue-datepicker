@@ -100,6 +100,7 @@
             @close-picker="$emit('close-picker')"
             @select-date="$emit('select-date')"
             @select-now="selectCurrentDate"
+            @clear="$emit('clear')"
         >
             <template v-for="(slot, i) in actionSlots" #[slot]="args" :key="i">
                 <slot :name="slot" v-bind="args as any" />
@@ -133,6 +134,7 @@
         'auto-apply': [ignoreClose?: boolean];
         'time-update': [];
         'menu-blur': [];
+        'clear': [];
     }>();
 
     defineProps<{
