@@ -266,6 +266,13 @@
             overlayOpen.value = true;
             rootEmit('overlay-toggle', { open: true, overlay: type });
         } else {
+            val.value = !val.value;
+        }
+
+        if (val.value) {
+            overlayOpen.value = true;
+            rootEmit('overlay-toggle', { open: true, overlay: type });
+        } else {
             overlayOpen.value = false;
             rootEmit('overlay-toggle', { open: false, overlay: type });
         }
