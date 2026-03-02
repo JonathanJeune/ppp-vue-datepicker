@@ -185,8 +185,10 @@ export interface ActionRowConfig {
     showCancel: boolean;
     showNow: boolean;
     showPreview: boolean;
+    showClear: boolean;
     selectBtnLabel: string;
     cancelBtnLabel: string;
+    clearButtonLabel: string;
     nowBtnLabel: string;
     nowBtnRound?: Partial<{ rounding: RoundingMethod; roundTo: NearestMinutes }>;
 }

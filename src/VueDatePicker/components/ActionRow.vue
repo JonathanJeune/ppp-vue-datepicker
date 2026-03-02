@@ -59,7 +59,7 @@
                         @keydown.enter="$emit('clear')"
                         @keydown.space="$emit('clear')"
                     >
-                        {{ clearButtonLabel }}
+                        {{ actionRow.clearButtonLabel }}
                     </button>
                     <button
                         v-if="actionRow.showNow"

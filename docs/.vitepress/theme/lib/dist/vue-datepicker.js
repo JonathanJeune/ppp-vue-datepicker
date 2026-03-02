@@ -1052,6 +1052,7 @@ const Ln = {
   showPreview: !0,
   selectBtnLabel: "Select",
   cancelBtnLabel: "Cancel",
+  clearButtonLabel: "Clear",
   nowBtnLabel: "Now",
   nowBtnRound: void 0
 }, wr = {

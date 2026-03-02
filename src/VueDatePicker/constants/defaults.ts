@@ -68,6 +68,7 @@ export const defaultActionRow = {
     showPreview: true,
     selectBtnLabel: 'Select',
     cancelBtnLabel: 'Cancel',
+    clearButtonLabel: 'Clear',
     nowBtnLabel: 'Now',
     nowBtnRound: undefined,
 };
